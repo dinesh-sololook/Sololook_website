@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoloLook - Fashion That Defines You</title>
+    <meta name="description" content="SoloLook - Premium fashion brand offering trendy clothing and accessories that define your unique style">
+    <meta name="keywords" content="fashion, clothing, style, trendy, sololook, premium fashion, fashion brand">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo">
+                    <h2>SoloLook</h2>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About Us</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                    <li><a href="brand.html" class="nav-link">Brand</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Fashion That Defines You</h1>
+                <p>Discover the latest trends with SoloLook - Where style meets individuality</p>
+                <button class="cta-button">Explore Collection</button>
+            </div>
+        </section>
+
+        <!-- Featured Collections -->
+        <section class="featured-collections">
+            <div class="container">
+                <h2>Featured Collections</h2>
+                <div class="collections-grid">
+                    <div class="collection-item">
+                        <div class="collection-image">
+                            <div class="placeholder-image">
+                                <i class="fas fa-tshirt"></i>
+                            </div>
+                        </div>
+                        <h3>Summer Collection</h3>
+                        <p>Light and breezy outfits perfect for the season</p>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-image">
+                            <div class="placeholder-image">
+                                <i class="fas fa-user-tie"></i>
+                            </div>
+                        </div>
+                        <h3>Formal Wear</h3>
+                        <p>Elegant and sophisticated pieces for special occasions</p>
+                    </div>
+                    <div class="collection-item">
+                        <div class="collection-image">
+                            <div class="placeholder-image">
+                                <i class="fas fa-running"></i>
+                            </div>
+                        </div>
+                        <h3>Casual Wear</h3>
+                        <p>Comfortable everyday fashion for modern lifestyle</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose SoloLook -->
+        <section class="why-choose">
+            <div class="container">
+                <h2>Why Choose SoloLook?</h2>
+                <div class="features-grid">
+                    <div class="feature">
+                        <i class="fas fa-star"></i>
+                        <h3>Premium Quality</h3>
+                        <p>Made with finest materials and superior craftsmanship</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-palette"></i>
+                        <h3>Unique Designs</h3>
+                        <p>Trendsetting styles that express your personality</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <h3>Fast Delivery</h3>
+                        <p>Quick and reliable shipping across India</p>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-leaf"></i>
+                        <h3>Sustainable</h3>
+                        <p>Eco-friendly fashion choices for conscious consumers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>SoloLook</h3>
+                    <p>Fashion that defines your unique style and personality.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                        <li><a href="brand.html">Brand</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p><i class="fas fa-envelope"></i> info@sololook.com</p>
+                    <p><i class="fas fa-phone"></i> +91 12345 67890</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 SoloLook. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        const hamburger = document.querySelector('.hamburger');
+        const navMenu = document.querySelector('.nav-menu');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('.nav-link').forEach(n => n.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        }));
+    </script>
+</body>
+</html>
